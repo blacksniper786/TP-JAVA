@@ -19,7 +19,7 @@ public class ex04 {
                 score-=5;
                 ntry = sc.nextInt();
                 }else if(ntry > snum){
-                	System.out.println("try a smaller number !");
+                    System.out.println("try a smaller number !");
                 }
         }while( ntry != snum);
 /*         System.out.println(snum);*/
