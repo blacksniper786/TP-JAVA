@@ -54,7 +54,8 @@ public class Compte{
 	}
 	//redefinition de methode toString
 	public String toString() {
-		return "num : " + numero +" \nsolde : "+ solde +"\ntype : "+ typeCompte +"\ncodeS "+ codeSecret;
+		return "num : " + numero +" \nsolde : "+
+	solde +"\ntype : "+ typeCompte +"\ncodeS "+ codeSecret;
 	}
 }
 

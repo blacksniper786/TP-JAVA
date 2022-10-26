@@ -16,7 +16,8 @@ public class Rectangle {
 		origine = pt;
 	}
 	public boolean Contient(Point pc, Rectangle rcournt) {
-		if ((pc.x-origine.x < rcournt.largueur ) && (pc.y-origine.y) < rcournt.longeur) {
+		if (	(pc.x-origine.x < rcournt.largueur ) 
+				&& (pc.y-origine.y) < rcournt.longeur	) {
 			return true;
 		}else {
 			return false;
