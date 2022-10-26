@@ -6,7 +6,7 @@ public class Ex02 {
 		float[] tab = new float[5];/* creat a scanner object to get input */
 		
 		for(int i=0;i<tab.length;i++) {
-			System.out.println("enter tab elem[i] :");
+			System.out.println("enter tab elem["+i+"] :");
 			/*float elem */tab[i]= sc.nextFloat(); /* creat an element every time to hold data from user */
 			/*tab[i]=elem;*/ /* give the data hold to the array element */
 		}
@@ -23,7 +23,7 @@ public class Ex02 {
 			}
 			somme+=tab[i];
 			i++;
-			System.out.println(somme +"-"+max +"-" +min);
+			/*System.out.println(somme +"-"+max +"-" +min);*/
 		}
 		float moy = somme /tab.length;
 		System.out.println("Moyenne of table is : " + moy);	
