@@ -12,6 +12,10 @@ public class Point{
 		double distX = Math.pow(x2-x,2),distY=Math.pow(y2-y,2);
 		return Math.sqrt(distX+distY);
 	}
-	
+	/*
+	public String toString() {
+		return (x + " " + y);
+	}
+	*/
 
 }

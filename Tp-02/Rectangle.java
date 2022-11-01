@@ -7,14 +7,27 @@ public class Rectangle {
 		largueur = la;
 		longeur = lo;
 	}
+	
 	//calcule aire
+	
 	public double Aire() {
 		return longeur*largueur;
 	}
+	
 	//translation de rectangle vres un point
+	
 	public void Translate(Point pt) {
 		origine = pt;
 	}
+	
+	// get Rectangle Origine
+	
+	public String getRectOrig() {
+		return (origine.x +" "+origine.y);
+	}
+	
+	// teste si un point est a interieur de rectangle
+	
 	public boolean Contient(Point pc, Rectangle rcournt) {
 		if (	(pc.x-origine.x < rcournt.largueur ) 
 				&& (pc.y-origine.y) < rcournt.longeur	) {
@@ -23,7 +36,9 @@ public class Rectangle {
 			return false;
 			}
 	}
-	//
+	
+	// teste si rect1 contient rect2
+	
 	public boolean ContientRect(Rectangle rect,Rectangle rc){
 		if( Contient(rect.origine,rc) 
 					&& (rect.largueur < rc.largueur) 
