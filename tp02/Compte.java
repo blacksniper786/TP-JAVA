@@ -1,13 +1,15 @@
-public class Compte{
+package tp02;
+
+public class Compte {
 	private int numero;
 	private char typeCompte;
 	double solde;
 	private int codeSecret;
-	Compte(){
-		numero=999999;
-		typeCompte = '\0';//pour dire rien on utilise \0
-		solde=0.0;
-		codeSecret=0;
+	public Compte(){
+		this.numero = 999999;
+		this.typeCompte = '\0';//pour dire rien on utilise \0
+		this.solde = 0.0;
+		this.codeSecret = 0;
 	}
 	//
 	public void AutoSecret() {
@@ -17,23 +19,24 @@ public class Compte{
 	/*public int getCodeSecret() {
 		return codeSecret;
 	}*/
+	
 //	construecteur surcharge
 	//
-	Compte(int num,char c,double s){
-		numero = num;
-		if( c=='D' || c=='E') {
-			typeCompte=c;
+	public Compte(int numero,char typeCompte,double solde){
+		this.numero = numero;
+		if( typeCompte=='D' || typeCompte=='E') {
+			this.typeCompte=typeCompte;
 		}
 		AutoSecret();
-		solde=s;
+		this.solde=solde;
 	}
 	
 	//setteurs numero & typeCompte
-	public void setNumero(int num) {
-		numero=num;
+	public void setNumero(int numero) {
+		this.numero=numero;
 	}
-	public void setTypeCompte(char type) {
-		typeCompte=type;
+	public void setTypeCompte(char typeCompte) {
+		this.typeCompte=typeCompte;
 	}
 	
 	//getteurs numero & codeSecret
@@ -57,9 +60,5 @@ public class Compte{
 		return "num : " + numero +" \nsolde : "+
 	solde +"\ntype : "+ typeCompte +"\ncodeS "+ codeSecret;
 	}
+
 }
-
-
-
-
-

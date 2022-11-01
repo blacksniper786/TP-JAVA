@@ -1,10 +1,16 @@
-public class Point{
+package tp02;
+
+public class Point {
 	double x;
 	double y;
 	//first construecteur
-	Point(double X,double Y){
-		x=X;
-		y=Y;
+	Point(){
+		x=0;
+		y=0;
+	}
+	Point(double x,double y){
+		this.x=x;
+		this.y=y;
 	}
 	//Methode DIst calcule distance entre le point courant 
 	//et le point en parametre
@@ -17,5 +23,4 @@ public class Point{
 		return (x + " " + y);
 	}
 	*/
-
 }

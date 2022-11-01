@@ -1,6 +1,8 @@
-public class ex03 {
-    public static void main(String[] args) {
-    
+package tp01;
+
+public class Ex03 {
+	public static void main(String[] args) {
+	    
         String str2 = args[1];
         int num1 = Integer.parseInt(args[0]);
         int num2 = Integer.parseInt(args[2]);
@@ -32,4 +34,5 @@ public class ex03 {
         }
         // System.out.println(som);
         }
+
 }
