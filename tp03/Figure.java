@@ -1,4 +1,3 @@
-package tp03;
 import java.util.Vector;
 
 public class Figure {
@@ -24,7 +23,7 @@ public class Figure {
 		return instances;
 	}
 	
-	/*public String toString() {
-		return "x : "+this.x+"\ny : "+this.y+"\ncouleur : "+this.couleur;
-	}*/
+	public String toString() {
+		return "x : "+this.x+" y : "+this.y+" couleur : "+this.couleur+"\n";
+	}
 }

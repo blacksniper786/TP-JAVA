@@ -23,4 +23,7 @@ public class Rectangle extends Figure {
 		}
 		return instancesRectangle;
 	}
+	public String toString() {
+		return super.toString() + " lo : "+this.lo+" lo : "+this.la+"\n";
+	}
 }

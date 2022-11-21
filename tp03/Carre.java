@@ -2,7 +2,7 @@ package tp03;
 import java.util.Enumeration;
 import java.util.Vector;
 
-public class 	 extends Figure {
+public class Carre extends Figure {
 	private double cote;
 	public Carre(Figure f,double cote) {
 		super(f);
@@ -23,5 +23,8 @@ public class 	 extends Figure {
 		}
 		return instancesCarre;
 }
+	public String toString() {
+		return super.toString() + " cote : "+this.cote+"\n";
+	}
 	
 }
